@@ -74,6 +74,34 @@
        margin: 0 auto;
        padding-top: 50px;	     
      }
+.member-container {
+        display: flex;
+        align-items: start;
+        margin: 30px auto;
+        max-width: 900px;
+        gap: 30px;
+    }
+    .member-image {
+        width: 200px;
+        flex-shrink: 0;
+    }
+    .member-info {
+        text-align: left;
+        flex-grow: 1;
+    }
+    .member-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .member-title {
+        color: #666;
+        margin-bottom: 15px;
+    }
+    .member-description {
+        line-height: 1.6;
+        font-size: 12pt;
+    }
+		
     </style> 
 	
 </head>
@@ -114,11 +142,17 @@ Board-certified Radiation Oncologist
 </pre>
 
 </br>    
-<img src="dasolsong.jpg" style="display: block; margin: 0 auto; width:200px;">  <!--  height:300px; -->
-<p style="text-align:center;">
-Dasol Song<br>
-MS student
-</p>	    
+    <div class="member-container">
+        <img src="dasolsong.jpg" class="member-image">
+        <div class="member-info">
+            <div class="member-name">Dasol Song</div>
+            <div class="member-title">MS student</div>
+            <div class="member-description">
+                Research: Deep learning in radiation therapy<br>
+                I am working on developing AI models for improving radiation treatment planning.
+            </div>
+        </div>
+    </div>  
 
 </br>	
 <img src="hyewonjo.jpeg" style="display: block; margin: 0 auto; width:200px;">  <!--  height:300px; -->
