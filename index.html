@@ -70,7 +70,7 @@
        z-index: 1;
      }
      .text {
-       max-width: 600px;
+       max-width: 1120px;
        margin: 0 auto;
        padding-top: 50px;	     
      }
@@ -78,19 +78,44 @@
         display: flex;
         align-items: start;
         margin: 30px auto;
-        max-width: 900px;
+        max-width: 1120px;
         gap: 30px;
     }
     .member-image {
         width: 200px;
+        margin-right: 40px;
         flex-shrink: 0;
     }
     .pi-image {
         width: 240px;
+        margin-right: 0;
     }
     .member-description.pi-cv {
         font-size: 10.5pt;
         line-height: 1.45;
+        max-width: none;
+        white-space: nowrap;
+    }
+    .alumni-table {
+        margin: 10px auto 40px;
+        border-collapse: collapse;
+        border: none;
+    }
+    .alumni-table th, .alumni-table td {
+        border: none;
+        padding: 6px 14px;
+        text-align: left;
+        vertical-align: top;
+    }
+    .alumni-table th {
+        color: #666;
+        font-weight: normal;
+    }
+    .alumni-table td:first-child {
+        font-weight: bold;
+    }
+    .alumni-table td:not(:last-child), .alumni-table th {
+        white-space: nowrap;
     }
     .pi-cv div {
         margin-bottom: 4px;
@@ -110,6 +135,7 @@
     .member-description {
         line-height: 1.6;
         font-size: 12pt;
+        max-width: 600px;
     }
 		
     </style> 
@@ -239,98 +265,19 @@
 <p style="text-align:center; font-size: 24px; font-weight: bold; font-family: 'Times New Roman';">
 Alumni
 </p>
-    <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Soyeon Choi</div>
-            <div class="member-title">Master's graduate</div>
-            <div class="member-description">
-                Current position: Global Training Hub for Biomanufacturing Support Foundation (GTHB-SF, 글로벌바이오인력양성허브 지원재단)
-            </div>
-        </div>
-    </div>
+    <table class="alumni-table">
+        <tr><th>Name</th><th>Role</th><th>Current position</th></tr>
+        <tr><td>Soyeon Choi</td><td>Master's graduate</td><td>Global Training Hub for Biomanufacturing Support Foundation (GTHB-SF, 글로벌바이오인력양성허브 지원재단)</td></tr>
+        <tr><td>Dasol Song</td><td>Master's graduate</td><td>Researcher, The Korea Hansen Welfare Association (한국한센복지협회)</td></tr>
+        <tr><td>Hyewon Jo</td><td>Master's graduate</td><td>Researcher, Korea Research Institute of Bioscience and Biotechnology (KRIBB, 한국생명공학연구원)</td></tr>
+        <tr><td>Sharmin Afroz</td><td>PhD graduate</td><td>Currently establishing her own research group in Bangladesh.</td></tr>
+        <tr><td>Jiwon Yu</td><td>Internship (wet-lab)</td><td>Undergraduate medical student</td></tr>
+        <tr><td>Haeun Jung</td><td>Internship (wet-lab)</td><td>Undergraduate medical student</td></tr>
+        <tr><td>Kayeon Shin</td><td>Internship (dry-lab)</td><td>Undergraduate medical student</td></tr>
+        <tr><td>Seoyeon Oh</td><td>Internship (dry-lab)</td><td>Undergraduate medical student</td></tr>
+        <tr><td>Minju Kim</td><td>Internship (dry-lab)</td><td>Undergraduate medical student</td></tr>
+    </table>
 
-   <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Dasol Song</div>
-            <div class="member-title">Master’s graduate</div>
-            <div class="member-description">
-                Current position: Researcher, The Korea Hansen Welfare Association <br>
-		(한국한센복지협회)
-            </div>
-        </div>
-    </div>
-
-   <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Hyewon Jo</div>
-            <div class="member-title">Master’s graduate</div>
-            <div class="member-description">
-                Current position: Researcher, Korea Research Institute of Bioscience and Biotechnology <br>
-		(KRIBB, 한국생명공학연구원)
-            </div>
-        </div>
-    </div>
-
-   <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Sharmin Afroz</div>
-            <div class="member-title">PhD graduate</div>
-            <div class="member-description">
-                Currently establishing her own research group in Bangladesh.
-            </div>
-        </div>
-    </div>
-		
-    <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Jiwon Yu</div>
-            <div class="member-title">Internship (wet-lab)</div>
-            <div class="member-description">
-                Current position: Undergradute medical student
-            </div>
-        </div>
-    </div>	
-
-    <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Haeun Jung</div>
-            <div class="member-title">Internship (wet-lab)</div>
-            <div class="member-description">
-                Current position: Undergradute medical student
-            </div>
-        </div>
-    </div>	
-
-    <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Kayeon Shin</div>
-            <div class="member-title">Internship (dry-lab)</div>
-            <div class="member-description">
-                Current position: Undergradute medical student
-            </div>
-        </div>
-    </div>
-
-    <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Seoyeon Oh</div>
-            <div class="member-title">Internship (dry-lab)</div>
-            <div class="member-description">
-                Current position: Undergradute medical student
-            </div>
-        </div>
-    </div>
-
-    <div class="member-container" style="justify-content: center;">
-        <div class="member-info" style="text-align: center;">
-            <div class="member-name">Minju Kim</div>
-            <div class="member-title">Internship (dry-lab)</div>
-            <div class="member-description">
-                Current position: Undergradute medical student
-            </div>
-        </div>
-    </div>		
-		
     </nav>
 	
 </body>
